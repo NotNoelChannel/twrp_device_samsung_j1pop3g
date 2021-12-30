@@ -12,3 +12,4 @@ $(INSTALLED_RECOVERYIMAGE_TARGET): $(MKBOOTIMG) 		$(recovery_ramdisk) 		$(recove
 	@echo -e ${CL_GRN}"----- Lying about SEAndroid state to Samsung bootloader ------"${CL_RST}
 	$(hide) echo -n "SEANDROIDENFORCE" >> $(INSTALLED_RECOVERYIMAGE_TARGET)
 	$(hide) $(call assert-max-image-size,$@,$(BOARD_RECOVERYIMAGE_PARTITION_SIZE),raw)
+	
