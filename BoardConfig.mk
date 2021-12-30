@@ -87,7 +87,7 @@ TW_NO_REBOOT_BOOTLOADER := true
 TW_HAS_DOWNLOAD_MODE    := true
 
 TW_EXCLUDE_TWRPAPP      := true
-TW_EXCLUDE_MTP          := false
+#TW_EXCLUDE_MTP          := false
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone1/temp"
 TW_USE_TOOLBOX          := true
 
