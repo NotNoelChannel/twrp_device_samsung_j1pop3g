@@ -15,4 +15,4 @@ $(INSTALLED_RECOVERYIMAGE_TARGET): $(MKBOOTIMG) 		$(recovery_ramdisk) 		$(recove
 	$(hide) echo -n "SEANDROIDENFORCE" >> $(INSTALLED_RECOVERYIMAGE_TARGET)
 	$(hide) $(call assert-max-image-size,$@,$(BOARD_RECOVERYIMAGE_PARTITION_SIZE),raw)
 	$(hide) tar -C $(PRODUCT_OUT) -H ustar -c recovery.img > $(FLASH_IMAGE_TARGET)
-	@echo -e ${CL_CYN}"Made Odin flashable recovery tar: ${FLASH_IMAGE_TARGET}"${CL_RST}
+	@echo -e ${CL_CYN}"Made Odin-flashable recovery.tar: ${FLASH_IMAGE_TARGET}"${CL_RST}
