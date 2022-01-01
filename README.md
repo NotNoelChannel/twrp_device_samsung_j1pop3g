@@ -5,7 +5,7 @@
 ### Prerequisites
 
 - Oracle JDK 7 *(installation steps can be found [here](.docs/installing_jdk_7.md))*
-- Android build tools *(installation steps can be found [here](https://source.android.com/setup/build/initializing?hl=en#installing-required-packages-ubuntu-1804)*
+- Android build tools *(installation steps can be found [here](https://source.android.com/setup/build/initializing?hl=en#installing-required-packages-ubuntu-1804))*
 
 ### Building
 
