@@ -1,7 +1,7 @@
 # Platform
 TARGET_ARCH                  := arm
 TARGET_BOARD_PLATFORM        := sc8830
-TARGET_BOARD_PLATFORM_GPU    := mali-400mp2
+TARGET_BOARD_PLATFORM_GPU    := mali-400
 TARGET_CPU_ABI               := armeabi-v7a
 TARGET_CPU_ABI2              := armeabi
 TARGET_ARCH_VARIANT          := armv7-a-neon
@@ -41,8 +41,8 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_KERNEL_ARCH        := arm
 TARGET_KERNEL_HEADER_ARCH := arm
 
-TARGET_KERNEL_SOURCE := kernel/samsung/j1pop3g
-TARGET_KERNEL_CONFIG := j1pop3g_hw02_defconfig
+TARGET_PREBUILT_KERNEL := device/samsung/j1pop3g/prebuilt/zImage
+TARGET_PREBUILT_DT     := device/samsung/j1pop3g/prebuilt/dt.img
 
 BOARD_MKBOOTIMG_ARGS    := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --cmdline "console=ttyS1,115200n8"
 BOARD_CUSTOM_BOOTIMG_MK := device/samsung/j1pop3g/mkbootimg.mk
